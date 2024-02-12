@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            text-align: center;
+            background: linear-gradient(to right, #2b40ff, #07121a);
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: white;
+            margin: 15px;
+            font-size: 32px;
+        }
+
+        input[type="text"] {
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid black;
+            margin: 5px;
+        }
+
+        button {
+            font-size: 18px;
+            color: white;
+            background-color: red;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: darkred;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            margin-top: 20px;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .calculator-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .calculator-form input[type="text"],
+        .calculator-form button {
+            width: 200px;
+        }
+
+        @media (min-width: 768px) {
+            .calculator-form {
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .calculator-form input[type="text"],
+            .calculator-form button {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <img alt="Hello" src="images/hello.gif">
+        <h1>Hello buddy!</h1>
+        <div class="calculator-form">
+            <form action="Servlet" method="get">
+                <input type="text" name="num1" placeholder="Enter first Number">
+                <input type="text" name="num2" placeholder="Enter second number">
+                
+                
+                
+                
+                <button type="submit" name="btn" value="1">+</button>
+                <button type="submit" name="btn" value="2">-</button>
+                <button type="submit" name="btn" value="3">*</button>
+                <button type="submit" name="btn" value="4">/</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
